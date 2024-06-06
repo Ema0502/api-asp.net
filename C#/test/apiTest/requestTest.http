@@ -1,11 +1,15 @@
-GET http://localhost:5209
-
-POST http://localhost:5209/todos HTTP/1.1
-Content-Type: : application/json
+GET http://localhost:5209/todos
+###
+GET http://localhost:5209/todos/2
+###
+POST http://localhost:5209/todos
+Content-Type: application/json
 
 {
-    "id": 1,
+    "id": 2,
     "name": "Write Demo",
-    "dueDate": "2024-02-30",
+    "dueDate": "2024-12-21",
     "isCompleted": false
 }
+###
+GET http://localhost:5209/tasks/2
